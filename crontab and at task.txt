@@ -1,0 +1,22 @@
+crontab and at task
+
+Task 1:
+Schedule a crontab job to run every day at 4:00 AM that creates a backup of the directory /home/user1/myfiles and stores it in /home/user1/backups. Ensure that the backup file is named with the current date and time.
+
+Task 2:
+Use the at command to schedule a job to run in exactly 30 minutes that copies the file /home/user1/myfiles/file1.txt to the directory /home/user2/files.
+
+Task 3:
+Schedule a crontab job to run every week on Monday at 8:00 AM that runs the script /home/user1/scripts/cleanup.sh. The script should delete all files in the directory /tmp that are older than 30 days.
+
+Task 4:
+Schedule a crontab job to run every hour between 9:00 AM and 5:00 PM on weekdays (Monday to Friday) that logs the memory usage of the system in a file /var/log/mem_usage.log. The log file should include the date, time, and the current memory usage of the system.
+
+Task 5:
+Use the at command to schedule a job to run at a specific time (say, 7:00 PM) on the first day of every month that sends an email to the user "john" with the subject "Monthly report" and the body containing the output of the command "df -h".
+
+Task 6:
+Schedule a crontab job to run every day at 11:30 PM that deletes all files in the directory /tmp that are older than 3 days. Additionally, log the number of files deleted in a file /var/log/delete.log along with the date and time.
+
+Task 7:
+Use the at command to schedule a job to run in exactly 1 hour that shuts down the system. Before shutting down, the job should display a message to all logged-in users with the text "The system will be shutting down in 1 minute"

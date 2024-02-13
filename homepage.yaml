@@ -15,11 +15,18 @@ spec:
       labels:
         app: nginx1
     spec:
+      volumes:
+        - name: my-pvc
+          persistentVolumeClaim:
+          claimName: my-pvc
       containers:
       - name: nginx
         image: kunal2411/homepage:latest
         ports:
         - containerPort: 80
+        volumeMounts:
+        - mountPath: "/usr/share/nginx/html"
+          name: my-pvc
 ...
 ---
 apiVersion: v1
