@@ -13,11 +13,6 @@ spec:
   strategy:
     type: RollingUpdate
   template:
-  template:
-      app: my-app
-  strategy:
-    type: RollingUpdate
-  template:
     metadata:
       labels:
         app: my-app
